@@ -1,0 +1,22 @@
+apply plugin: "commercial-plugin"
+
+version = '4.1.0-SNAPSHOT'
+
+docgen.product = 'XL Deploy'
+docgen.elasticsearchPluginManual = [title: 'Elastic Search Plugin Manual', appendCiReference: true, prefixes: 'elastic']
+
+dependencies {
+    compile deployit_remoting_plugin
+    compile deployit_python_plugin
+    compile deployit_generic_plugin
+    compile overthere
+    compile freemarker
+
+    docgenerator deployit_doc_generator
+
+    testCompile testng
+    testCompile overcast
+    testCompile commons_io
+
+    testRuntime deployit_file_plugin
+}

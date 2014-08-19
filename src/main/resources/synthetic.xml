@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd" xmlns="http://www.xebialabs.com/deployit/synthetic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<type type="elastic.Server" extends="generic.Container">
+		<property name="port" kind="integer" description="The port elasticsearch is running on" default="9200" />
+		<method name="stop" delegate="shellScript" script="elastic/stop"/>
+		<method name="start" delegate="shellScript" script="elastic/start"/>
+	</type>
+
+	<type type="elastic.IndexConfiguration" extends="generic.ExecutedScript" deployable-type="elastic.IndexConfigurationSpec"
+	      container-type="elastic.Server">
+	    <generate-deployable type="elastic.IndexConfigurationSpec" extends="generic.Resource"/>
+	    <property name="indexName" description="The name of the index to be used within Elastic Search" />
+	    <property name="indexConfig" description="Json string describing the configuration of the index" />
+
+	    <property name="createScript" default="elastic/createIndex" hidden="true"/>
+	    <property name="modifyScript" default="elastic/createIndex" hidden="true"/>
+	    <property name="destroyScript" default="elastic/removeIndex" hidden="true"/>
+	</type>
+</synthetic>
