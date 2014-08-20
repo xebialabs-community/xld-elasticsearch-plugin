@@ -11,6 +11,6 @@ apply plugin: "com.github.hierynomus.license"
 apply plugin: 'java'
 
 license {
-    header rootProject.file('src/main/license/xebialabs_poc.license')
+    header rootProject.file('src/main/license/xebialabs_community.license')
     strictCheck true
 }
