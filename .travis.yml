@@ -9,4 +9,5 @@ deploy:
     secure: CFtWQ+Jar0IrDbfOTDS8pWCg4zZLclTqK+tH/ttUml/m7ukUjyOfO+xc2c00jnjkvq3wrdNB6bBcZCFqptG4GKGUgsQ+ILVL0Kob6hqizw8hKPN1DrnC+rgQPN/kfvwlXMjcsdvXmjZg6D3iKrfx3aZFhO8ohh1vgEYYzUOzZaM=
   file: build/libs/elasticsearch-plugin*.jar
   on:
+    tags: true 
     repo: xebialabs-community/elasticsearch-plugin
