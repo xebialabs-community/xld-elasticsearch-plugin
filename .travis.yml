@@ -1,1 +1,5 @@
 language: java
+notifications:
+  hipchat:
+    rooms:
+      secure: PtixR6CccsLl3zBliXBYsKDp/ZVmYfMG5ylt9sQ/3Y1o9SoW/GicV2xidCvkxdzgAWBvX2+4W86Fa8c3qBvYSm/vmrEeT/1GdenqB8yCnG5VnzcZo2VyKw1KJW/AfwMsgKF2ydqEFrg/d7OgNKj2NfOi0fdOmdREnQqa4qw90zY=
