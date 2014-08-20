@@ -8,6 +8,7 @@ deploy:
   api_key:
     secure: CFtWQ+Jar0IrDbfOTDS8pWCg4zZLclTqK+tH/ttUml/m7ukUjyOfO+xc2c00jnjkvq3wrdNB6bBcZCFqptG4GKGUgsQ+ILVL0Kob6hqizw8hKPN1DrnC+rgQPN/kfvwlXMjcsdvXmjZg6D3iKrfx3aZFhO8ohh1vgEYYzUOzZaM=
   file: build/libs/elasticsearch-plugin-1.0.jar
+  skip_cleanup: true
   on:
     all_branches: true
     tags: true 
