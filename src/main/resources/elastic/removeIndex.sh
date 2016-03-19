@@ -5,4 +5,4 @@
 # FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
 #
 
-curl -XDELETE http://${deployed.container.host.address}:${deployed.container.port}/${deployed.indexName}
+curl -XDELETE "http://${deployed.container.host.address}:${deployed.container.port}/${deployed.indexName}"

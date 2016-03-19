@@ -5,4 +5,4 @@
 # FOR A PARTICULAR PURPOSE. THIS CODE AND INFORMATION ARE NOT SUPPORTED BY XEBIALABS.
 #
 
-curl -XPUT 'http://${deployed.container.host.address}:${deployed.container.port}/${deployed.indexName}/' -d '${deployed.indexConfig}'
+curl -XPUT "http://${deployed.container.host.address}:${deployed.container.port}/${deployed.indexName}/" -d "${deployed.indexConfig}"
