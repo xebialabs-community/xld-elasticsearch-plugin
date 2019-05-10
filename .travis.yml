@@ -1,8 +1,7 @@
 language: java
 notifications:
-  hipchat:
-    rooms:
-      secure: PtixR6CccsLl3zBliXBYsKDp/ZVmYfMG5ylt9sQ/3Y1o9SoW/GicV2xidCvkxdzgAWBvX2+4W86Fa8c3qBvYSm/vmrEeT/1GdenqB8yCnG5VnzcZo2VyKw1KJW/AfwMsgKF2ydqEFrg/d7OgNKj2NfOi0fdOmdREnQqa4qw90zY=
+  slack:
+    secure: JdOkvUfc+hSq0BdptrTa7q5Gqc8uIs5N6mLE7PFKZPzxfgIqUT/8itrvaqCUJMTh6AzAZLy4dUk2v0VQJDxfbloVwJ6jbORIWWOojK7L7VXf4VAkt3j0TZ8R0ZwPIzlBpegJQxB/6ABIKTT1tQxR1aCdY24y281mcBrGQUy9cno=
 deploy:
   provider: releases
   api_key:
@@ -11,5 +10,5 @@ deploy:
   skip_cleanup: true
   on:
     all_branches: true
-    tags: true 
+    tags: true
     repo: xebialabs-community/elasticsearch-plugin
