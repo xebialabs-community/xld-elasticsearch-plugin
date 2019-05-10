@@ -6,7 +6,7 @@ notifications:
 deploy:
   provider: releases
   api_key:
-    secure: CFtWQ+Jar0IrDbfOTDS8pWCg4zZLclTqK+tH/ttUml/m7ukUjyOfO+xc2c00jnjkvq3wrdNB6bBcZCFqptG4GKGUgsQ+ILVL0Kob6hqizw8hKPN1DrnC+rgQPN/kfvwlXMjcsdvXmjZg6D3iKrfx3aZFhO8ohh1vgEYYzUOzZaM=
+    secure: TMxYmQ7OESE2L1/GTv9fgtw65xxmAaW66FVtQYrY6Rvb+j2epEVQ3HV1EY8BPewQqpMfqYly0LI72fd1XQsK3EBrosqzASkZ7q2P5eMIg9p5uTZOydWR69KLuin+bx5KQKKmZM+E1HskrNVK6ba41VlYKXqkCSjhihe1nv8PIjU=
   file: build/libs/elasticsearch-plugin-1.1.jar
   skip_cleanup: true
   on:
